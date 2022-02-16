@@ -1,5 +1,12 @@
-date : 2/16/2022 , path:/api/v1/bootcamps , method: GET
-date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: GET
-date : 2/16/2022 , path:/api/v1/bootcamps , method: POST
-date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: PUT
 date : 2/16/2022 , path:/api/v1/bootcamps/ , method: DELETE
+  date : 2/16/2022 , path:/api/v1/bootcamps , method: GET
+  date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: GET
+  date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: GET
+  date : 2/16/2022 , path:/api/v1/bootcamps , method: GET
+  date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: GET
+  date : 2/16/2022 , path:/api/v1/bootcamps , method: POST
+  date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: PUT
+  date : 2/16/2022 , path:/api/v1/bootcamps/ , method: DELETE
+  date : 2/16/2022 , path:/api/v1/bootcamps/1 , method: DELETE
+  date : 2/16/2022 , path:/api/v1/bootcamps , method: GET
+  

@@ -1,24 +1,18 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
-const appLogger = require('./utils/Logger.js');
+const colors = require('colors');
 //setup a logger
-
 //load the env
 dotenv.config({
   path: `${path.join('./', 'config', 'config.env')}`,
 });
+require('./config/db.js').dbConnection();
 
 //initializing the server
 const app = express();
 
-app.use((req, res, next) => {
-  appLogger.logEvent(`date : ${new Date(
-    Date.now()
-  ).toLocaleDateString()} , path:${req.url} , method: ${req.method}
-`);
-  next(); // move next
-});
+app.use(require('./middleware/logger.js').appLoggerMiddleware);
 
 //routes to handle the bootcamp
 app.use(require('./router/bootcamps.js')); // this will handler the bootcamps
@@ -27,5 +21,7 @@ app.use(require('./router/bootcamps.js')); // this will handler the bootcamps
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.log(`server is on and listening on port ${port}`);
+  console.log(
+    `server is on and listening on port ${port}`.underline.yellow.bold
+  );
 });
