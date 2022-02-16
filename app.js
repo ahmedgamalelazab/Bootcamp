@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
+//setup a logger
 
 //load the env
 dotenv.config({
