@@ -10,6 +10,9 @@ dotenv.config({
 //initializing the server
 const app = express();
 
+//routes to handle the bootcamp
+app.use(require('./router/bootcamps.js')); // this will handler the bootcamps
+
 //selecting the server port
 const port = process.env.PORT || 3000;
 
